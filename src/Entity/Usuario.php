@@ -13,8 +13,8 @@ class Usuario
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column]
-    private ?int $cod_usuario = null;
+    #[ORM\Column(length: 6)]
+    private ?string $cod_usuario = null;
 
     #[ORM\Column(length: 100)]
     private ?string $nome_usuario = null;
